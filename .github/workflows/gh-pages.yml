@@ -3,9 +3,9 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  pull_request:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site${{ steps.pages.outputs.base_path }}"
+          path: ./_site
 
   deploy:
     environment:
@@ -53,4 +53,4 @@ jobs:
           github-token: ${{ env.secrets.GITHUB_TOKEN }}
           publish-branch: gh-pages
           publish-dir: ./_site
-          # cname: ""
+          
