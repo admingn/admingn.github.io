@@ -50,7 +50,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          github-token: ${{ env.secrets.GITHUB_TOKEN }}
-          publish-branch: gh-pages
-          publish-dir: ./_site
-          
+          github-token: ${{ secrets.GITHUB_TOKEN }}
