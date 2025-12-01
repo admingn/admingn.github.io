@@ -1,10 +1,10 @@
 theme: jekyll-theme-chirpy
 lang: en
-timezone: +0000
+timezone: Europe/London
 title: Lux-Nation
 tagline: By Awesome Lux-Group
 description: Documentation Blog of Lux-Nation
-url: https://luxnation.github.io
+url: https://admingn.github.io
 github:
   username: luxnation
 # mastodon:
@@ -14,7 +14,7 @@ social:
   email: sirchanmp@zohomail.cn
   links:
     - https://linkedin.com/in/drthesmos
-    - https://github.com/luxnation
+    - https://github.com/admingn
     - https://mstdn.plus/@luxnation
 
 # Site Verification Settings
@@ -86,8 +86,8 @@ comments:
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # boolean, keep empty means false
-    env: # [development | production]
+    enabled: true  # boolean, keep empty means false
+    env: production # [development | production]
 
 pwa:
   enabled: true # The option for PWA feature (installable)
@@ -99,7 +99,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+# baseurl: ""
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
